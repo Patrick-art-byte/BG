@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bắc Giang Doctors</title>
+    <style>
+        body {
+            font-family: Arial, "sans-serif";
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0px;
+        }
+        header {
+            background: #49ada8;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            }
+        nav {
+            margin: 10px 10px;
+            }
+        nav a {
+            margin: 0 25px;
+            color: white;
+            text-decoration: none;
+              }
+        main {
+            padding: 20px 0;
+        }
+        resources {
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #808080;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+		}
+		input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            padding: 10px 15px;
+            border: none;        
+            border-radius: 8x;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+		}
+		.zoom {
+            width: 300px;
+            transition: transform 0.4s ease;
+			margin-left: 25px
+        }
+
+        .zoom:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BG.Doctors</h1>
+        <nav>
+            <a href="" ><b>Trang Chủ</b> &nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="" ><b>Bệnh Viện</b> &nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="#"><b>Phòng Khám</b> &nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a href="#"><b>Giới Thiệu</b> &nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </nav>
+		<form action="/search" method="GET">
+    <input type="text" name="query" placeholder="Search..." required>
+    <input type="submit" value="Search">
+</form>
+    </header>
+    <main>
+		<div>
+			<h2 p align="center">BG.Doctors<br>
+			Bác sĩ Bắc Giang
+			</h2>
+	    </div>
+		<p style="font-size: 30px">
+			<b>
+			    <i>&nbsp;&nbsp;&nbsp;-Sức khỏe người bệnh</i><br>
+				  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i>Sứ mệnh chúng tôi-</i>
+			</b>
+		</p>
+		<img src="https://img.freepik.com/free-vector/medical-isometric-set_1284-25270.jpg?semt=ais_hybrid" alt="Zoom Image" class="zoom">
+        <div class="resources">
+            <h3>Một số tổ chức,trung tâm hỗ trợ Y tế trên thế giới:</h3>
+            <ul>
+                <li><a href="https://www.who.int" target="_blank">Tổ Chức Y Tế Thế Giới (WHO)</a></li>
+                <li><a href="https://www.cdc.gov" target="_blank">Trung Tâm Kiểm Soát và Phòng Ngừa Dịch Bệnh (CDC)</a></li>
+                <li><a href="https://www.moh.gov.vn" target="_blank">Bộ Y Tế Việt Nam</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Trang Web Y Tế</p>
+    </footer>
+</body>
+</html>
